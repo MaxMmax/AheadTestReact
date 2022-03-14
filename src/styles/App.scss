@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+}
+
+.App-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: calc(100vh - 100px);
+}
+.App-input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 30px;
+  clear: both;
+  width: 100%;
+}

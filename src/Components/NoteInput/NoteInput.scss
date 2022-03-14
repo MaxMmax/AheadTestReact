@@ -1,0 +1,39 @@
+.note-input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.note-input__label {
+  margin-bottom: 5px;
+}
+.note-input__input {
+  border: 0px;
+  border-bottom: 2px solid rgb(170, 166, 166);
+  font-size: 18px;
+  line-height: 32px;
+
+  &:focus,
+  &:active {
+    outline: none !important;
+    border-color: #719ece;
+    box-shadow: 0 0 10px #719ece;
+  }
+}
+
+.note-input__error {
+  border: 0px;
+  border-bottom: 2px solid rgb(170, 166, 166);
+  font-size: 18px;
+  line-height: 32px;
+
+  &:focus,
+  &:active {
+    border-color: red;
+    box-shadow: 0 0 10px red;
+  }
+}
+
+.note-input-span__error {
+ color: red;
+}
+

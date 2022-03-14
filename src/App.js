@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import NoteInput from "./Components/NoteInput/NoteInput";
+import NoteList from "./Components/NoteList/NoteList";
+import NotesContext from "./NotesContext";
+import "./styles/App.scss";
 
 function App() {
+  const [notes, setNotes] = useState([]);
+  const onNoteAdd = (note) => {
+    setNotes([...notes, note]);
+  };
+  const onNoteDelete = (id) => {
+    setNotes(notes.filter((note) => note.id != id));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NotesContext.Provider value={{ notes, onNoteAdd, onNoteDelete }}>
+      <div className="App">
+        <div className="App-list">
+          <NoteList />
+        </div>
+        <div className="App-input">
+          <NoteInput label={"Add note..."} maxLength={300}></NoteInput>
+        </div>
+      </div>
+    </NotesContext.Provider>
   );
 }
 

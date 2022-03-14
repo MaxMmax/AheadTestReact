@@ -1,0 +1,47 @@
+.note{
+    border-radius: 8px;
+    border: 2px solid rgb(170, 166, 166);
+    padding: 20px 40px 20px 20px;
+    font-size:  20px;
+    display: flex;
+    position: relative;
+}
+
+.note-text
+{
+  flex-grow: 1;
+}
+
+.note-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.note-meta__weather-icon{
+
+}
+.note-meta__weather-temp{
+
+}
+.note-meta__weather-date{
+
+}
+
+.note-meta__weather-time{
+
+}
+
+.note-close-button
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color:  rgb(170, 166, 166);
+    appearance: none;
+    font-size: 30px;
+    background: none;
+    border:  none;
+    cursor: pointer;    
+}

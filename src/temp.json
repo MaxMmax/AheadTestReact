@@ -1,0 +1,76 @@
+{
+    "data": {
+        "coord": {
+            "lon": 139,
+            "lat": 35
+        },
+        "weather": [
+            {
+                "id": 801,
+                "main": "Clouds",
+                "description": "few clouds",
+                "icon": "02n"
+            }
+        ],
+        "base": "stations",
+        "main": {
+            "temp": 284.45,
+            "feels_like": 283.67,
+            "temp_min": 284.45,
+            "temp_max": 284.45,
+            "pressure": 1018,
+            "humidity": 78,
+            "sea_level": 1018,
+            "grnd_level": 989
+        },
+        "visibility": 10000,
+        "wind": {
+            "speed": 0.76,
+            "deg": 119,
+            "gust": 1.21
+        },
+        "clouds": {
+            "all": 11
+        },
+        "dt": 1647085502,
+        "sys": {
+            "country": "JP",
+            "sunrise": 1647032383,
+            "sunset": 1647074896
+        },
+        "timezone": 32400,
+        "id": 1851632,
+        "name": "Shuzenji",
+        "cod": 200
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+        "content-length": "491",
+        "content-type": "application/json; charset=utf-8"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=1ca0982c7a14b7518464ee8008f617b1"
+    },
+    "request": {}
+}
